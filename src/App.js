@@ -227,8 +227,10 @@ function Rec(props) {
       className={`bg-white ${props.hz ? 'hz-thing max-h-full' : 'w-full h-1/4'} flex-row flex rounded-2xl shadow-2xl shadow-[#1a1c2c]`}>
       <div className={"h-full w-1/2 p-4 flex flex-col"}>
         <div
-          className={"sf-ui-bold text-3xl mr-4 overflow-clip"}>
-          {props.feed.name} <span
+          className={"sf-ui-bold text-3xl mr-4 overflow-clip hover:cursor-pointer"}>
+          <span onClick={() => {
+            actOnFeed(props)
+          }}>{props.feed.name}</span> <span
           className="fa-solid fa-arrow-up-right-from-square scale-75 place-content-center text-blue-600 hover:text-blue-500 hover:underline hover:cursor-pointer"
           onClick={() => {
             actOnFeed(props)
@@ -237,9 +239,9 @@ function Rec(props) {
         <img
           src={props.feed.thumb}
           alt={""}
-          className={"w-full mt-4 h-full object-cover object-center rounded-2xl"}/>
+          className={"w-full h-full mt-4 object-cover object-center rounded-2xl"}/>
       </div>
-      <div className={"overflow-y-scroll pr-4 mt-4 mb-4 sf-ui-reg w-1/2"}>
+      <div className={"pr-4 mt-4 mb-4 sf-ui-reg w-1/2"}>
         {props.feed.name}<br/>
         Latitude: {props.feed.lat.toPrecision(6)}<br/>
         Longitude: {props.feed.long.toPrecision(6)}<br/>
@@ -296,7 +298,7 @@ function App() {
                                                   className={"aspect-video bg-black vid-thing object-contain rounded-2xl overflow-clip"}/>}
                   {feed.isHardcoded === 2 && <iframe
                     className={"aspect-video object-contain vid-thing rounded-2xl overflow-clip"}
-                    src="https://www.youtube.com/embed/6073MnV_aKI?modestbranding=1&controls=0&autoplay=1&showinfo=0"
+                    src="https://www.youtube.com/embed/ylvLjar6Qtk?si=sy4ZzEQ05VJIuLoW&controls=0&autoplay=1"
                     title="NetCam"
                     frameBorder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -324,7 +326,7 @@ function App() {
           </div>
           <div className={"mt-6"}/>
           <div
-            className={"flex flex-row w-full pt-6 -mt-6 pb-12 overflow-x-scroll gap-4"}>
+            className={"flex flex-row w-full pt-6 -mt-6 pb-24 overflow-x-scroll gap-4"}>
             {feeds.slice(0, 10).map(it => <Rec feed={it} hz={true}
                                                setScreen={setScreen}
                                                setFeed={setFeed}/>)}
@@ -332,92 +334,6 @@ function App() {
         </div>
       }
       {screen === 2 &&
-        <div
-          className={"w-screen h-screen flex flex-row place-content-center p-6"}>
-          <div
-            className={"rounded-2xl w-1/3 overflow-y-scroll p-4"}>
-            <div className={"h-max w-full"}>
-              <img src={hts} alt={"yoman"}
-                   className={"h-20 drop-shadow shadow-black hover:cursor-pointer"}
-                   onClick={() => setScreen(0)}/>
-            </div>
-            <div className={"mt-4"}/>
-            <div className={"sf-ui-bold text-6xl mb-6"}>
-              About us
-            </div>
-            <section className="about sf-ui-reg mb-6">
-              <div className={"sf-ui-bold text-3xl mb-4"}>Background</div>
-              <div className="about-info sf-ui-reg">
-                <img src=
-                       "https://sotp.nyc3.cdn.digitaloceanspaces.com/wp-content/uploads/2020/03/Global-637x319.jpg"
-                     alt={""} className={" rounded-2xl overflow-clip mb-4"}/>
-                <div>
-                  <p> When the COVID-19 pandemic hit, people suddenly began to
-                    realize the importance of going outside. Something as normal
-                    as visiting the local park became a difficult task, and
-                    going to a different country was absolutely impossible.
-                    Fortunately, the modern age and the World Wide Web have
-                    allowed the world to become ever more interconnected.
-                    Despite this, there still isn’t a software that allows
-                    people to explore and share the world through live footage.
-                    This is when NetCam comes in.
-
-                  </p>
-                </div>
-              </div>
-            </section>
-            <section className="about1">
-              <div className={"sf-ui-bold text-3xl mb-4"}>Purpose and Values
-              </div>
-              <div className="about1-info sf-ui-reg">
-                <img src=
-                       {"https://images.inc.com/uploaded_files/image/1920x1080/getty_520289888_129511.jpg"}
-                     className={"rounded-2xl overflow-clip mb-4"}/>
-                <div>
-                  <p> NetCam is a social media site that aims to create an
-                    increasingly interconnected world, allowing people to
-                    explore different parts of the world through live footage
-                    while also sharing parts of their own community.
-                  </p>
-                  <div className={"sf-ui-bold text-xl mt-4 mb-4"}>Appreciation of the Small Things</div>
-                  <p>
-                    Around the world, people are hyper fixated on the
-                    mainstream: popular trends, influencers, and debates that
-                    occur all over social media platforms like Twitter. However,
-                    rarely do people appreciate the community around them and
-                    the unique aspects of that community. Our platform aims to
-                    increase awareness and appreciation of the small things. It
-                    could be a local park, a garden, or even a sculpture.
-
-                  </p>
-                  <div className={"sf-ui-bold text-xl mt-4 mb-4"}>Accessibility</div>
-                  <p>
-                    We believe that everyone’s community has something special
-                    that should be shared. Therefore, our platform has an
-                    incredibly easy process for people to set up and post their
-                    live camera streams. Everyone’s streams have an equal
-                    opportunity to be shared and are recommended equally.
-
-                  </p>
-                  <div className={"sf-ui-bold text-xl mt-4 mb-4"}>Realism</div>
-                  <p>
-                    Social media propagates unrealistic expectations that are
-                    distorted with technology like filters, leading to people
-                    feeling inadequate. However, a livestream means that a real,
-                    live, representation of something is shown, not something
-                    heavily edited. We want to spread real representations of
-                    people’s lives, helping people to understand that their life
-                    is not worth any less than anyone else’s.
-
-                  </p>
-
-                </div>
-              </div>
-            </section>
-          </div>
-        </div>
-      }
-      {screen === 3 &&
         <div
           className={"w-screen h-screen flex flex-row place-content-center p-6"}>
           <div
@@ -503,6 +419,82 @@ function App() {
 
                 </div>
               </div>
+            </section>
+          </div>
+        </div>
+      }
+      {screen === 3 &&
+        <div
+          className={"w-screen h-screen flex flex-row place-content-center p-6"}>
+          <div
+            className={"rounded-2xl w-1/3 overflow-y-scroll p-4"}>
+            <div className={"h-max w-full"}>
+              <img src={hts} alt={"yoman"}
+                   className={"h-20 drop-shadow shadow-black hover:cursor-pointer"}
+                   onClick={() => setScreen(0)}/>
+            </div>
+            <div className={"mt-4"}/>
+            <div className={"sf-ui-bold text-6xl mb-6"}>
+              Adding your own camera
+            </div>
+            <div className="about sf-ui-reg mb-6">
+              <p> Add to our network of cameras and share a bit of your own
+                community for the world to see!</p>
+            </div>
+            <section className="about1 mb-6">
+              <div className={"sf-ui-bold text-3xl mb-4"}>Materials needed
+              </div>
+              <ul className={"sf-ui-reg list-disc list-inside"}>
+                <li>Raspberry Pi</li>
+                <li>Webcam</li>
+                <li>Laptop</li>
+                <li>USB drive</li>
+                <li>Battery Pack</li>
+              </ul>
+            </section>
+            <section className="about1 mb-6">
+              <div className={"sf-ui-bold text-3xl mb-4"}>Setting Up Your
+                Raspberry Pi
+              </div>
+              <iframe className={"aspect-video w-full rounded-2xl"}
+                      src="https://www.youtube.com/embed/x5KzYLoLtiw?si=qMIktdZNvOCr5VIl"
+                      title="YouTube video player" frameBorder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      referrerPolicy="strict-origin-when-cross-origin"
+                      allowFullScreen></iframe>
+            </section>
+            <section className="about1 mb-6">
+              <div className={"sf-ui-bold text-3xl mb-4"}>Posting your camera
+              </div>
+              <div className={"sf-ui-reg"}>
+                You can install our software to connect your newly created
+                webcam to our website.
+              </div>
+              <br/>
+              <div className={"sf-ui-reg"}>
+                Go to our website netcam.mliu.dev to directly download our
+                software onto your Raspberry Pi.
+              </div>
+            </section>
+            <section className="about1 mb-6">
+              <div className={"sf-ui-bold text-3xl mb-4"}>Where should you place
+                your camera?
+              </div>
+              <div className={"sf-ui-reg"}>
+                Now that you've created your camera, there is multitude of
+                places that you can put it to share your world with everyone
+                else.
+              </div>
+              <br/>
+              <div className={"sf-ui-reg"}>
+                Here are some of our suggestions for where to put your camera!
+              </div>
+              <ul className={"sf-ui-reg list-disc list-inside"}>
+                <li>Local Park</li>
+                <li>Outside Window</li>
+                <li>Home Aquarium</li>
+                <li>Home Garden</li>
+              </ul>
             </section>
           </div>
         </div>
