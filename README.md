@@ -1,70 +1,35 @@
-# Getting Started with Create React App
+## Inspiration
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+When the COVID-19 pandemic hit, people across the world suddenly began to spend an unprecedented amount of time online partaking in niche communities. As travel became less frequent, anxiety and loneliness increased by 25.3% (UNC Chapel Hill). Also, due to the advent of short-form video platforms like TikTok, there was a significant decrease in attention span and working memory (Forbes-Statista).
 
-## Available Scripts
+Additionally, platforms such as Google Earth and Street View are notably popular among people who want but are unable to explore the world, and organizations like zoos and museums have an interest in hosting live streams of their little corner of the world.
 
-In the project directory, you can run:
+However, there isn’t a cohesive, extensive site that combines all of these elements — which is where NetCam comes in. 
 
-### `npm start`
+## What it does
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+NetCam is a social media and entertainment platform that allows people to view cameras from around the globe, and also to create and register their own livestreams. NetCam’s wide database of locations range from famous landmarks to small side-streets, and can be easily added to by users themselves. Furthermore, users will be able to vote on livestreams, access recommendations, and share their favorite cameras with others. This fosters an increasingly interconnected world with an appreciation for the smaller things in life. 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## How we built it
 
-### `npm test`
+This web app was built primarily using React.js, along with HTML and CSS. The backend was developed with Java and Selenium webdrivers, Python for webscraping automation, and Pandas for csv-data parsing and analysis. The hardware portion is powered by a Raspberry Pi and a webcam. It uses OpenCV to capture video and ngrok is used to make it a livestream. 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Challenges we ran into
 
-### `npm run build`
+- The 3D textures were something our team hasn’t used before, so it took some trial and error before we got it down.
+- The Raspberry Pi was a little finicky at first.
+- The automation of the webscraping required a lot of challenging finetuning.
+- Soooo many divs to size and center…
+- We were having so much fun that we forgot to eat dinner!
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Accomplishments that we're proud of
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+We’re especially proud of the interactive and rotatable model Earth on our homepage, with an attractive and realistic UI to go along with it.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## What we learned
 
-### `npm run eject`
+Some members learned the basics of front-end design with React.js. We also revisited and revitalized existing skills relating to webscraping, learning about Selenium and WebDrivers.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## What's next for NetCam
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+We can’t wait to introduce even more cameras that provide unique views of the world. We also want to improve the social media aspect of our product, allowing people to follow certain users, save cams, comment, and so on. We would also like increased support for different languages, allowing even more people to use our product easily. Finally, we would also like to integrate the remote control of cameras instead of static view through a feed. 
