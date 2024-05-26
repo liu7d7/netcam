@@ -1,38 +1,63 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: 'SF UI Display';
+  src: url('./assets/sf-ui-display-medium-58646be638f96.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.sf-ui-reg {
+  font-family: 'SF UI Display', sans-serif
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@font-face {
+  font-family: 'Borel';
+  src: url('./assets/Borel-Regular.ttf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.borel {
+  font-family: 'Borel', cursive;
 }
 
-.App-link {
-  color: #61dafb;
+.sf-ui-reg {
+  font-family: 'SF UI Display', sans-serif
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@font-face {
+  font-family: 'SF UI Bold';
+  src: url('./assets/sf-ui-display-heavy-586470160b9e5.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.sf-ui-bold {
+  font-family: 'SF UI Bold', sans-serif
+}
+
+@font-face {
+  font-family: 'Iosevka';
+  src: url('./assets/IosevkaTermCurly-SemiBold.ttf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.iosevka {
+  font-family: 'Iosevka', sans-serif
+}
+
+.w-1-10 {
+  width: 10%
+}
+
+.hz-thing {
+  min-width: calc(100vw/5)
+}
+
+.vid-thing {
+  height: calc(100vh / 2)
+}
+
+.vt-thing {
+  height: calc(100vh - 18.0333333rem)
 }
