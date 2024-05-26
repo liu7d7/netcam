@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/netcam/static/css/main.fb7b792c.css",
+    "main.js": "/netcam/static/js/main.ebbcc701.js",
+    "static/js/453.8566eefc.chunk.js": "/netcam/static/js/453.8566eefc.chunk.js",
+    "static/media/IosevkaTermCurly-SemiBold.ttf": "/netcam/static/media/IosevkaTermCurly-SemiBold.3aa0a977036556b84927.ttf",
+    "static/media/sf-ui-display-heavy-586470160b9e5.otf": "/netcam/static/media/sf-ui-display-heavy-586470160b9e5.231bc1a484977910f09b.otf",
+    "static/media/sf-ui-display-medium-58646be638f96.otf": "/netcam/static/media/sf-ui-display-medium-58646be638f96.32f938759a1b1b8ce03b.otf",
+    "static/media/hts.svg": "/netcam/static/media/hts.9e061e8d7adf2998597745374747be84.svg",
+    "static/media/Borel-Regular.ttf": "/netcam/static/media/Borel-Regular.3868b5f28036f4d36d01.ttf",
+    "index.html": "/netcam/index.html",
+    "main.fb7b792c.css.map": "/netcam/static/css/main.fb7b792c.css.map",
+    "main.ebbcc701.js.map": "/netcam/static/js/main.ebbcc701.js.map",
+    "453.8566eefc.chunk.js.map": "/netcam/static/js/453.8566eefc.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fb7b792c.css",
+    "static/js/main.ebbcc701.js"
+  ]
+}
