@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.a2ac8ecc.css",
-    "main.js": "/static/js/main.ebed678d.js",
+    "main.css": "/static/css/main.3e9dafea.css",
+    "main.js": "/static/js/main.cd06c753.js",
     "static/js/453.8566eefc.chunk.js": "/static/js/453.8566eefc.chunk.js",
     "static/media/IosevkaTermCurly-SemiBold.ttf": "/static/media/IosevkaTermCurly-SemiBold.3aa0a977036556b84927.ttf",
     "static/media/sf-ui-display-heavy-586470160b9e5.otf": "/static/media/sf-ui-display-heavy-586470160b9e5.231bc1a484977910f09b.otf",
@@ -9,12 +9,12 @@
     "static/media/hts.svg": "/static/media/hts.9e061e8d7adf2998597745374747be84.svg",
     "static/media/Borel-Regular.ttf": "/static/media/Borel-Regular.3868b5f28036f4d36d01.ttf",
     "index.html": "/index.html",
-    "main.a2ac8ecc.css.map": "/static/css/main.a2ac8ecc.css.map",
-    "main.ebed678d.js.map": "/static/js/main.ebed678d.js.map",
+    "main.3e9dafea.css.map": "/static/css/main.3e9dafea.css.map",
+    "main.cd06c753.js.map": "/static/js/main.cd06c753.js.map",
     "453.8566eefc.chunk.js.map": "/static/js/453.8566eefc.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a2ac8ecc.css",
-    "static/js/main.ebed678d.js"
+    "static/css/main.3e9dafea.css",
+    "static/js/main.cd06c753.js"
   ]
 }
